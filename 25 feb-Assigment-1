@@ -1,0 +1,25 @@
+Write a Python program to move positive numbers to the first and negative numbers to the next.
+Program:-
+n=int(input('Enter n:'))
+l=[]
+t=[]
+m=[]
+for i in range(n):
+    x=int(input())
+    l.append(x)
+for i in range(n):
+    if l[i]>0:
+        t.append(l[i])
+        x=x+1 
+for i in range(x,n):
+    if l[i]<0:
+        m.append(l[i])
+print(t,m)
+Output:-
+Enter n:5
+7
+-8
+4
+-6
+3
+[7, 4, 3] [-8, -6]
